@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/views/pages/OnBoarding_page.dart';
 import 'package:flutter_application_1/views/pages/login_page.dart';
 import 'package:lottie/lottie.dart';
 
@@ -11,7 +12,7 @@ class WelcomePage extends StatelessWidget {
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -48,7 +49,7 @@ class WelcomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return LoginPage(title: 'Register');
+                          return OnboardingPage(title: 'Next');
                         },
                       ),
                     );

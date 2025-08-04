@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
               brightness: isDarkMode ? Brightness.dark : Brightness.light,
             ),
           ),
-          home: MyHomePage(),
+          home: WelcomePage(),
         );
       },
     );

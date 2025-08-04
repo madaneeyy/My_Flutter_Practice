@@ -29,7 +29,6 @@ class WidgetTree extends StatelessWidget {
                 KConstants.themeModeKey,
                 isDarkModeNotifier.value,
               );
-              isDarkModeNotifier.value = !isDarkModeNotifier.value;
             },
             icon: ValueListenableBuilder(
               valueListenable: isDarkModeNotifier,
