@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data/constants.dart';
+import 'package:flutter_application_1/views/pages/course_page.dart';
 import 'package:flutter_application_1/widgets/container_widget.dart';
 import 'package:flutter_application_1/widgets/hero_widget.dart';
 
@@ -19,7 +20,8 @@ class HomePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            HeroWidget(title: 'Madanu'),
+            SizedBox(height: 10),
+            HeroWidget(title: 'Madanu', nextPage: CoursePage()),
             ...List.generate(list.length, (index) {
               return ContainerPage(
                 title: list.elementAt(index),
